@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.add-task {
+  animation-name: add-task;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  fill: green;
+}
+
+@keyframes add-task {
+  from {fill: green; transform: rotate(0deg);}
+  to {fill: red; transform: rotate(-135deg);}
+}
