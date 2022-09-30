@@ -4,15 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.add-task {
-  animation-name: add-task;
+.show-add {
+  fill: green;
+  animation-name: show-add;
   animation-duration: 1s;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  fill: green;
 }
 
-@keyframes add-task {
-  from {fill: green; transform: rotate(0deg);}
-  to {fill: red; transform: rotate(-135deg);}
+.hide-add {
+  fill: red;
+  transform: rotate(-135deg);
+  animation-name: hide-add;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes show-add {
+  from {
+    fill: red;
+    transform: rotate(-135deg);
+  }
+  to {
+    fill: green;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hide-add {
+  from {
+    fill: green;
+    transform: rotate(0deg);
+  }
+  to {
+    fill: red;
+    transform: rotate(-135deg);
+  }
 }

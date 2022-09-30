@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Header, AddTask, Tasks } from './components';
 
 const App = () => {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -33,7 +34,7 @@ const App = () => {
     <div className='container'>
       <div className='flex h-screen w-screen'>
         <div className='min-w-[400px] min-h-[600px] m-auto shadow-xl rounded-xl border-2 px-[35px] py-[28px]'>
-          <Header />
+          <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
           <AddTask />
           <Tasks tasks={tasks} />
         </div>
