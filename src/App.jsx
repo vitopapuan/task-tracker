@@ -30,6 +30,11 @@ const App = () => {
     },
   ]);
 
+  // Delete Task
+  const deleteTask = (id) => {
+    console.log('delete', id)
+  }
+
   return (
     <div className='container'>
       <div className='flex h-screen w-screen'>

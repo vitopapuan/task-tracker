@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaTrash } from 'react-icons/fa';
 
 const Task = ({ task }) => {
@@ -8,7 +7,7 @@ const Task = ({ task }) => {
         <h3 className='font-medium '>{task.text}</h3>
         <p className='font-light'>{task.day}</p>
       </div>
-      <FaTrash className='fill-red-500' />
+      <FaTrash className='fill-red-500 hover:cursor-pointer' />
     </div>
   );
 };
