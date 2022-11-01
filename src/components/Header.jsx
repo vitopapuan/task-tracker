@@ -6,7 +6,7 @@ const Header = ({ onAdd, showAdd }) => {
     <header className='flex justify-between items-center'>
       <h1 className='font-sans font-semibold text-[32px]'>Task Tracker</h1>
       <FaPlusCircle
-        className={`w-[32px] h-[32px] cursor-pointer ${showAdd ? 'hide-add' : 'show-add'}`}
+        className={`w-[32px] h-[32px] cursor-pointer ${showAdd ? 'hide-add-icon' : 'show-add-icon'}`}
         onClick={onAdd}
       />
     </header>

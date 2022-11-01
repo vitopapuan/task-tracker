@@ -4,24 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.show-add {
+.show-add-icon {
   fill: green;
-  animation-name: show-add;
+  animation-name: show-add-icon;
   animation-duration: 1s;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 
-.hide-add {
+.hide-add-icon {
   fill: red;
   transform: rotate(-135deg);
-  animation-name: hide-add;
+  animation-name: hide-add-icon;
   animation-duration: 1s;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes show-add {
+@keyframes show-add-icon {
   from {
     fill: red;
     transform: rotate(-135deg);
@@ -32,7 +32,7 @@
   }
 }
 
-@keyframes hide-add {
+@keyframes hide-add-icon {
   from {
     fill: green;
     transform: rotate(0deg);
